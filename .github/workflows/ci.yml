@@ -19,9 +19,9 @@ jobs:
                 run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD   
 
             - name: Build and push Docker image
-              run: docker build -t $DOCKER_USERNAME/flower_cicd:latest .
+              run: docker build -t $DOCKER_USERNAME/flower:latest .
             - name: Push to Docker Hub
-              run: docker push $DOCKER_USERNAME/flower_cicd:latest
+              run: docker push $DOCKER_USERNAME/flower:latest
                  
             
 
