@@ -1,0 +1,20 @@
+name: CD Pipeline
+
+on:
+    workflow_run:
+        workflows: ["CI Pipeline"]
+        types:
+            - completed
+jobs:
+    build:
+        runs-on: self-hosted
+        steps:
+            - name: pull docker image
+              run: docker pull $DOCKER_USERNAME/flower:latest
+            - name: Stop and remove existing container
+              run: sudo docker rm -f flower || true
+            - name: Run new container
+              run: sudo docker run -d --name flower -p 3000:3000 $DOCKER_USERNAME/flower:latest
+                
+
+          
