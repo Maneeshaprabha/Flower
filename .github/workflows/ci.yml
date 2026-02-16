@@ -19,7 +19,7 @@ jobs:
                 run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD   
 
             - name: Build Docker image
-              run: docker build -t maneeshaherath/flower:latest .
+              run: docker build -t maneeshaherath/flower:latest.
 
             - name: Push Docker image
               run: docker push maneeshaherath/flower:latest
