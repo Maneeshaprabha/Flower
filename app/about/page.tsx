@@ -9,7 +9,7 @@ export default function AboutPage() {
   const milestones = [
     {
       year: "1987",
-      title: "Grandma Rose's Dream",
+      title: "Grandmemory of a Rose's Dream",
       description: "Rose started with a small cart selling flowers from her garden on weekends",
       image: "/assets/shop03.jpg?height=200&width=300",
     },
