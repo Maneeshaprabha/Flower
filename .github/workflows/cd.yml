@@ -10,11 +10,11 @@ jobs:
         runs-on: self-hosted
         steps:
             - name: pull docker image
-              run: docker pull maneeshaherath/fl:latest
+              run: docker pull maneeshaherath/flower:latest
             - name: Stop and remove existing container
-              run: sudo docker rm -f fl || true
+              run: sudo docker rm -f flower || true
             - name: Run new container
-              run: sudo docker run -d --name fl -p 3000:3000 maneeshaherath/fl:latest
+              run: sudo docker run -d --name flower -p 3000:3000 maneeshaherath/flower:latest
                 
 
           
