@@ -16,5 +16,3 @@ jobs:
             - name: Run new container
               run: sudo docker run -d --name flower -p 3000:3000 maneeshaherath/flower:latest
                 
-
-          
