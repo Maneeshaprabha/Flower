@@ -8,8 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted  # or ubuntu-latest
-
+    runs-on: self-hosted  
     steps:
       - name: pull docker image
         run: sudo docker pull ${{ secrets.DOCKER_USERNAME }}/testcicd-flower:latest
