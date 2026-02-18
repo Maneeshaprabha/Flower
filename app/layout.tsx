@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "BloomHaven - Premium Flower Shop | Fresh Flowers Delivered Daily",
   description:
-    "Discover beautiful, hand-picked fresh flowers for every occasion at BloomHaven. Premium arrangements, same-day delivery, and custom designs. Order online today!",
+    "Discover beautiful, fresh flowers for every occasion at BloomHaven. Premium arrangements, same-day delivery, and custom designs. Order online today!",
     generator: 'v0.app'
 }
 
