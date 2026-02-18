@@ -12,8 +12,8 @@ jobs:
 
     steps:
       - name: pull docker image
-        run: sudo docker pull ${{ secrets.DOCKER_USERNAME }}/testcicd-flower:latest
+        run: sudo docker pull ${{ secrets.DOCKER_USERNAME }}/cicdflower:latest
       - name: Delete old container
-        run: sudo docker rm -f testcicd-flower-container || true
+        run: sudo docker rm -f cicdflower-container || true
       - name: Run new container
-        run: sudo docker run -d -p 8080:8080 --name testcicd-flower-container ${{ secrets.DOCKER_USERNAME }}/testcicd-flower
+        run: sudo docker run -d -p 8080:3000 --name cicdflower-container ${{ secrets.DOCKER_USERNAME }}/cicdflower
