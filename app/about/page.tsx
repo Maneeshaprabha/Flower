@@ -77,7 +77,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <Badge className="bg-pink-100 text-pink-800 px-4 py-2 rounded-full transform -rotate-1">
                   <Heart className="h-4 w-4 mr-2" />
-                  Our Family Story
+                  Our Family Storys
                 </Badge>
                 <h1 className="text-5xl font-bold text-gray-900 leading-tight">
                   Three generations of
